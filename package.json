@@ -1,0 +1,24 @@
+{
+  "name": "language-bloater",
+  "version": "0.0.0",
+  "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawsonbotsford/language-bloater.git"
+  },
+  "keywords": [
+    "github",
+    "trending",
+    "hack"
+  ],
+  "author": "Dawson Botsford <dawsonbotsford@gmail.com> (http://dawsonbotsford.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawsonbotsford/language-bloater/issues"
+  },
+  "homepage": "https://github.com/dawsonbotsford/language-bloater#readme"
+}
