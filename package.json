@@ -1,5 +1,5 @@
 {
-  "name": "language-bloater",
+  "name": "puffer-fish",
   "version": "0.0.0",
   "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
   "main": "cli.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dawsonbotsford/language-bloater.git"
+    "url": "git+https://github.com/dawsonbotsford/puffer-fisher.git"
   },
   "keywords": [
     "github",
@@ -18,7 +18,7 @@
   "author": "Dawson Botsford <dawsonbotsford@gmail.com> (http://dawsonbotsford.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dawsonbotsford/language-bloater/issues"
+    "url": "https://github.com/dawsonbotsford/puffer-fisher/issues"
   },
-  "homepage": "https://github.com/dawsonbotsford/language-bloater#readme"
+  "homepage": "https://github.com/dawsonbotsford/puffer-fisher#readme"
 }
