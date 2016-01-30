@@ -8,7 +8,8 @@
     "puffer-fish": "cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,9 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "inquirer": "^0.11.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }

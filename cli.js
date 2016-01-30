@@ -1,14 +1,10 @@
 #!/usr/bin/env node
-
 'use strict';
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const chalk = require('chalk');
-
-function isNormalInteger(str) {
-  var n = ~~Number(str);
-  return String(n) === str && n >= 0 && n <= 100000000;
-}
+const helper = require('./helper.js');
 
 inquirer.prompt([
   {
@@ -16,28 +12,16 @@ inquirer.prompt([
     name: 'language',
     message: 'What language would you like to generate?',
     default: 'CSS',
-    choices: [
-      new inquirer.Separator(' '),
-      new inquirer.Separator('== Most popular =='),
-      'JavaScript',
-      'CSS',
-      'HTML',
-      new inquirer.Separator(' '),
-      new inquirer.Separator('== Moderate popularity =='),
-      'Swift',
-      new inquirer.Separator(' '),
-      new inquirer.Separator('== Least popularity =='),
-      'bash'
-    ]
+    choices: helper.buildChoices()
   },
   {
     type: 'input',
     name: 'size',
     message: 'What size file? (bytes)',
-    default: '5000',
+    default: '10000',
     filter: function( val ) {
-      if (!isNormalInteger(val)) {
-        throw new TypeError('File size must be a positive integer <= 100,000,000');
+      if (!helper.isSafeInteger(val)) {
+        throw new Error('File size must be a positive integer <= 100,000,000');
       }
       return val.toLowerCase();
     }
@@ -54,11 +38,11 @@ inquirer.prompt([
     }
   ], function( confirm ) {
     if (confirm.generateFile === true) {
-      const suffix = 'sh';
+      const suffix = helper.getSuffix(answers.language);
       const fileName = 'puffer-fish.' + suffix;
       console.log('Building ' + fileName + '...');
       const finalString = new Array( Number(answers.size) + 1).join('p');
-      fs.writeFileSync('puffer-fish.sh', finalString, 'utf8');
+      fs.writeFileSync(fileName, finalString, 'utf8');
       console.log(chalk.green(fileName + ' successfully written!'));
     }
     else {
