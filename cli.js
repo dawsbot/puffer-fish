@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
 'use strict';
-var inquirer = require('inquirer');
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 function isNormalInteger(str) {
   var n = ~~Number(str);
-  return String(n) === str && n >= 0;
+  return String(n) === str && n >= 0 && n <= 100000000;
 }
 
 inquirer.prompt([
@@ -52,7 +53,10 @@ inquirer.prompt([
     }
   ], function( confirm ) {
     if (confirm.generateFile === true) {
-      console.log('Building file');
+      console.log('Building file..');
+      const finalString = new Array( Number(answers.size) + 1).join('p');
+      fs.writeFileSync('puffer-fish.sh', finalString, 'utf8');
+
     }
     else {
       console.log('Zero bytes puffer-fished');
