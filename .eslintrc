@@ -22,6 +22,7 @@
     "chrome": false
   },
   "ecmaFeatures": {
-    "jsx": true
+    "jsx": true,
+    "es6": true
   }
 }

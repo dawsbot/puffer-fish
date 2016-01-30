@@ -3,6 +3,7 @@
 'use strict';
 const inquirer = require('inquirer');
 const fs = require('fs');
+const chalk = require('chalk');
 
 function isNormalInteger(str) {
   var n = ~~Number(str);
@@ -53,13 +54,15 @@ inquirer.prompt([
     }
   ], function( confirm ) {
     if (confirm.generateFile === true) {
-      console.log('Building file..');
+      const suffix = 'sh';
+      const fileName = 'puffer-fish.' + suffix;
+      console.log('Building ' + fileName + '...');
       const finalString = new Array( Number(answers.size) + 1).join('p');
       fs.writeFileSync('puffer-fish.sh', finalString, 'utf8');
-
+      console.log(chalk.green(fileName + ' successfully written!'));
     }
     else {
-      console.log('Zero bytes puffer-fished');
+      console.log(chalk.yellow('No file and 0 bytes puffer-fished'));
     }
   });
 });
