@@ -1,5 +1,4 @@
 #puffer-fish
-
 <br>
 Trend your Github repo on whatever language you want by generating the filetype of your choosing
 
@@ -9,7 +8,7 @@ Trend your Github repo on whatever language you want by generating the filetype 
 
 <br>
 ## Usage
-`puffer-fish css 2000`
+`puffer-fish`
 
 <br>
 ## License

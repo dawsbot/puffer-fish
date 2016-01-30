@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
   "main": "cli.js",
+  "preferGlobal": true,
+  "bin": {
+    "puffer-fish": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/dawsonbotsford/puffer-fisher/issues"
   },
-  "homepage": "https://github.com/dawsonbotsford/puffer-fisher#readme"
+  "homepage": "https://github.com/dawsonbotsford/puffer-fisher#readme",
+  "dependencies": {
+    "inquirer": "^0.11.4"
+  }
 }
