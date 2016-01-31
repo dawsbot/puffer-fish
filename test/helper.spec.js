@@ -21,8 +21,8 @@ describe('#getSuffix', function() {
 		result.should.equal('css');
   });
   it('returns correct suffix from most popular', function() {
-		const result = helper.getSuffix('brainfuck');
-		result.should.equal('bf');
+		const result = helper.getSuffix('assembly');
+		result.should.equal('nasm');
   });
 });
 

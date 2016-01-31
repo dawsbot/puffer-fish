@@ -5,6 +5,8 @@
   "main": "cli.js",
   "preferGlobal": true,
   "bin": {
+    "puff": "cli.js",
+    "puffer": "cli.js",
     "puffer-fish": "cli.js"
   },
   "scripts": {

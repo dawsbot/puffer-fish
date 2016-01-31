@@ -1,25 +1,29 @@
 [
   "== Most Popular ==",
   {
-    "JavaScript": "js",
     "Go": "go",
-    "Python": "py"
+    "JavaScript": "js",
+    "Python": "py",
+    "Swift": "swift"
+
   },
   "== Moderately Popular ==",
   {
+    "C": "c",
     "CSS": "css",
+    "C++": "cpp",
     "HTML": "html",
-    "C": "c"
+    "PHP": "php",
+    "Ruby": "ruby",
+    "Shell": "sh"
 
   },
   "== Least Popular ==",
   {
-    "brainfuck": "bf",
     "assembly": "nasm",
-    "ASP": "aspx"
-
-
-
-
+    "ASP": "aspx",
+    "Bro": "bro",
+    "R": "r",
+    "VimL": "vim"
   }
 ]
