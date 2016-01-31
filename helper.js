@@ -4,34 +4,34 @@ const languages = require('./languages.json');
 const inquirer = require('inquirer');
 
 module.exports = {
-	getSuffix: function(lang) {
+  getSuffix: function(lang) {
     let toReturn = '';
-		languages.forEach(function (elem, index) {
-			if (typeof elem === 'object') {
+    languages.forEach(function (elem, index) {
+      if (typeof elem === 'object') {
         if (languages[index].hasOwnProperty(lang)){
           toReturn = languages[index][lang];
         }
-			}
-			//else throw error
-		});
+      }
+      //else throw error
+    });
     return toReturn;
-	},
+  },
 
-	buildChoices: function() {
+  buildChoices: function() {
     let myChoices = [];
-		for (let elem of languages) {
-			if (typeof elem === 'string') {
-				myChoices.push(new inquirer.Separator(' '));
-				myChoices.push(new inquirer.Separator(elem));
-			}
-			else {
-				for (let i in elem){
-					myChoices.push(i);
-				}
-			}
-		}
+    for (let elem of languages) {
+      if (typeof elem === 'string') {
+        myChoices.push(new inquirer.Separator(' '));
+        myChoices.push(new inquirer.Separator(elem));
+      }
+      else {
+        for (let i in elem){
+          myChoices.push(i);
+        }
+      }
+    }
     return myChoices;
-	},
+  },
 
   /*
    * arg1 must be > 0 and < 300,000,000
