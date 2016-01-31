@@ -40,9 +40,31 @@ inquirer.prompt([
     if (confirm.generateFile === true) {
       const suffix = helper.getSuffix(answers.language);
       const fileName = 'puffer-fish.' + suffix;
-      console.log('Building ' + fileName + '...');
+      const pufferFishDir = '.puffer-fish';
+
+
+			//build pufferFishDir for the puffer files if it does not already exist
+			try {
+					let stats = fs.lstatSync(pufferFishDir);
+
+					if (stats.isDirectory()) {
+						console.log(pufferFishDir + ' already exists! Thanks for coming back.');
+					}
+					else {
+						console.log('Creating ' + pufferFishDir + ' for your files...');
+						fs.mkdirSync(pufferFishDir);
+					}
+			}
+			catch (e) {
+				console.log('Creating ' + pufferFishDir + ' for your files...');
+				fs.mkdirSync(pufferFishDir);
+			}
+
       const finalString = new Array( Number(answers.size) + 1).join('p');
-      fs.writeFileSync(fileName, finalString, 'utf8');
+
+      //TODO: Do not write over a file if it has the same name. Add an int at the end to avoid conflicts
+      fs.writeFileSync(pufferFishDir + '/' + fileName, finalString, 'utf8');
+
       console.log(chalk.green(fileName + ' successfully written!'));
     }
     else {
