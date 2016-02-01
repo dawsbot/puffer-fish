@@ -12,5 +12,9 @@ Trend your Github repo on whatever language you want by generating the filetype 
 `puffer-fish`
 
 <br>
+## Changelog
+[Changelog.md](CHANGELOG.md)
+
+<br>
 ## License
 MIT

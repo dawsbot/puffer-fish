@@ -9,8 +9,8 @@
   },
   "== Moderately Popular ==",
   {
-    "C": "c",
     "CSS": "css",
+    "C": "c",
     "C++": "cpp",
     "HTML": "html",
     "PHP": "php",
@@ -23,6 +23,7 @@
     "assembly": "nasm",
     "ASP": "aspx",
     "Bro": "bro",
+    "CoffeeScript": "coffee",
     "R": "r",
     "VimL": "vim"
   }

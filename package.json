@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "changelog": "github-changes -o dawsonbotsford -r puffer-fish -a"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,8 @@
   "homepage": "https://github.com/dawsonbotsford/puffer-fisher#readme",
   "dependencies": {
     "chalk": "^1.1.1",
-    "inquirer": "^0.11.4"
+    "inquirer": "^0.11.4",
+    "random-strings": "0.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
