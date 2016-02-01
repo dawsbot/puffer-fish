@@ -2,6 +2,7 @@
 
 const languages = require('./languages.json');
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 module.exports = {
   getSuffix: function(lang) {
@@ -39,5 +40,16 @@ module.exports = {
   isSafeInteger: function(str) {
     var n = ~~Number(str);
     return String(n) === str && n > 0 && n <= 300000000;
+  },
+
+  fileExists: function(fullPath) {
+    let toReturn = false;
+    fs.accessSync(fullPath, fs.R_OK | fs.W_OK, function(err) {
+      if (!err) {
+        toReturn = true;
+      }
+    });
+    return toReturn;
   }
+
 };

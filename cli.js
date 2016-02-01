@@ -5,6 +5,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const chalk = require('chalk');
 const helper = require('./helper.js');
+const rs = require('random-strings');
 
 inquirer.prompt([
   {
@@ -21,14 +22,12 @@ inquirer.prompt([
     default: '10000',
     filter: function( val ) {
       if (!helper.isSafeInteger(val)) {
-        throw new Error('File size must be a positive integer <= 100,000,000');
+        throw new Error('File size must be a positive integer <= 300,000,000');
       }
       return val.toLowerCase();
     }
   }
 ], function( answers ) {
-  //generate the test file here
-  // console.log( JSON.stringify(answers, null, '  ') );
   inquirer.prompt([
     {
       type: 'confirm',
@@ -39,16 +38,16 @@ inquirer.prompt([
   ], function( confirm ) {
     if (confirm.generateFile === true) {
       const suffix = helper.getSuffix(answers.language);
-      const fileName = 'puffer-fish.' + suffix;
       const pufferFishDir = '.puffer-fish';
-
+      const fileName = rs.alphaNumMixed(10) + '.' + suffix;
+      const fullPath = pufferFishDir + '/' + fileName;
 
 			//build pufferFishDir for the puffer files if it does not already exist
 			try {
 					let stats = fs.lstatSync(pufferFishDir);
 
 					if (stats.isDirectory()) {
-						console.log(pufferFishDir + ' already exists! Thanks for coming back.');
+						chalk.green(console.log(pufferFishDir + ' dir already exists! Thanks for coming back.'));
 					}
 					else {
 						console.log('Creating ' + pufferFishDir + ' for your files...');
@@ -62,8 +61,7 @@ inquirer.prompt([
 
       const finalString = new Array( Number(answers.size) + 1).join('p');
 
-      //TODO: Do not write over a file if it has the same name. Add an int at the end to avoid conflicts
-      fs.writeFileSync(pufferFishDir + '/' + fileName, finalString, 'utf8');
+      fs.writeFileSync(fullPath, finalString, 'utf8');
 
       console.log(chalk.green(fileName + ' successfully written!'));
     }
