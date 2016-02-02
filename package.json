@@ -12,7 +12,8 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint *.js",
-    "changelog": "github-changes -o dawsonbotsford -r puffer-fish -a"
+    "changelog": "github-changes -o dawsonbotsford -r puffer-fish -a",
+    "change-log": "npm run changelog"
   },
   "repository": {
     "type": "git",
