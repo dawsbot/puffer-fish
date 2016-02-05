@@ -1,3 +1,11 @@
+`puffer-fish` let's you <b>hack this to be whatever you want</b>
+
+![screenshot](img/languageBar.png)
+
+<br>
+<br>
+<b>Look at the language data of this repo and check out the demo:</b>
+
 <p align="center">
   <a><img src="demo1.gif" title="Demo"/></a>
 </p>
@@ -23,6 +31,7 @@ puffer-fish
 
 <br>
 ## FAQ
+
 <br>
 #### How does this help with trending?
 Getting Github trending comes first from the programming language your repo is classified as. Once the [Linguist](https://github.com/github/linguist) classifies your repo into it's most prominent language, you are competing against the other popular repo's <b>also classified in that language</b> for trending.
