@@ -6,6 +6,7 @@ const fs = require('fs');
 const chalk = require('chalk');
 const helper = require('./helper.js');
 const rs = require('random-strings');
+const pb = require('pretty-bytes');
 
 inquirer.prompt([
   {
@@ -32,7 +33,7 @@ inquirer.prompt([
     {
       type: 'confirm',
       name: 'generateFile',
-      message: 'Generate a ' + answers.size + ' byte ' + answers.language + ' file?',
+      message: 'Generate a ' + pb(Number(answers.size)) + ' ' + answers.language + ' file?',
       default: 'true'
     }
   ], function( confirm ) {
@@ -44,7 +45,7 @@ inquirer.prompt([
 
 			//build pufferFishDir for the puffer files if it does not already exist
 			try {
-					let stats = fs.lstatSync(pufferFishDir);
+					const stats = fs.lstatSync(pufferFishDir);
 
 					if (stats.isDirectory()) {
 						chalk.green(console.log(pufferFishDir + ' dir already exists! Thanks for coming back.'));
@@ -63,10 +64,12 @@ inquirer.prompt([
 
       fs.writeFileSync(fullPath, finalString, 'utf8');
 
-      console.log(chalk.green(fileName + ' successfully written!'));
+      console.log(chalk.green('File successfully written to ' + fullPath));
     }
+
     else {
-      console.log(chalk.yellow('No file and 0 bytes puffer-fished'));
+      console.log(chalk.yellow('No file puffer-fished'));
     }
+
   });
 });

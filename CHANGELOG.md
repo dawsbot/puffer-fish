@@ -1,6 +1,7 @@
 ## Change Log
 
-### upcoming (2016/02/01 22:40 +00:00)
+### upcoming (2016/02/05 00:56 +00:00)
+- [4171dba](https://github.com/dawsonbotsford/puffer-fish/commit/4171dbad5e94ee9c4a292f5f84fec861fb8983c6) improve faq, etc. (@dawsonbotsford)
 - [0b4928e](https://github.com/dawsonbotsford/puffer-fish/commit/0b4928ef22acbbcc9ef1d9d16eec6e88e74aa7aa) Generate random filename. Closes #1 (@dawsonbotsford)
 - [e7a8114](https://github.com/dawsonbotsford/puffer-fish/commit/e7a811469fd72aa8c5fedabe443de887f364918b) fix indentation (@dawsonbotsford)
 - [f7e422e](https://github.com/dawsonbotsford/puffer-fish/commit/f7e422ecde84cef46864e21cba1acddff8d1f056) make hidden puffer-dir if it does not already exist (@dawsonbotsford)
