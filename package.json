@@ -1,6 +1,6 @@
 {
   "name": "puffer-fish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
   "main": "cli.js",
   "preferGlobal": true,
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dawsonbotsford/puffer-fisher.git"
+    "url": "git+https://github.com/dawsonbotsford/puffer-fish.git"
   },
   "keywords": [
     "github",
@@ -27,9 +27,9 @@
   "author": "Dawson Botsford <dawsonbotsford@gmail.com> (http://dawsonbotsford.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dawsonbotsford/puffer-fisher/issues"
+    "url": "https://github.com/dawsonbotsford/puffer-fish/issues"
   },
-  "homepage": "https://github.com/dawsonbotsford/puffer-fisher#readme",
+  "homepage": "https://github.com/dawsonbotsford/puffer-fish#readme",
   "dependencies": {
     "chalk": "^1.1.1",
     "inquirer": "^0.11.4",
