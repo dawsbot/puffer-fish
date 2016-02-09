@@ -1,6 +1,6 @@
 {
   "name": "puffer-fish",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
   "main": "cli.js",
   "preferGlobal": true,
