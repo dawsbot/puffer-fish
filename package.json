@@ -32,7 +32,7 @@
   "homepage": "https://github.com/dawsonbotsford/puffer-fish#readme",
   "dependencies": {
     "chalk": "^1.1.1",
-    "inquirer": "^0.12.0",
+    "inquirer": "^1.0.1",
     "pretty-bytes": "^3.0.0",
     "random-strings": "0.0.1"
   },
