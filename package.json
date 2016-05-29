@@ -1,6 +1,6 @@
 {
   "name": "puffer-fish",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
   "main": "cli.js",
   "preferGlobal": true,
@@ -39,5 +39,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
-  }
+  },
+  "files": [
+    "cli.js",
+    "helper.js"
+  ]
 }
