@@ -1,6 +1,6 @@
 {
   "name": "puffer-fish",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hit GitHub Trending by bloating your repo with code of less popular languages",
   "main": "cli.js",
   "preferGlobal": true,
@@ -10,10 +10,10 @@
     "puffer-fish": "cli.js"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "npm run lint && mocha",
     "lint": "eslint *.js",
     "changelog": "github-changes -o dawsonbotsford -r puffer-fish -a",
-    "change-log": "npm run changelog"
+    "precommit": "npm run changelog"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,9 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^2.11.0",
+    "github-changes": "^1.0.2",
+    "husky": "^0.11.4",
     "mocha": "^2.5.0"
   },
   "files": [
