@@ -54,14 +54,6 @@ This design choice was made so that puffer-fished files would remain largely hid
 #### Why is the generated filename so hideous?
 We used random strings in order to generate the filename in order to avoid name collisions should you want multiple puffer-fished files. With the current file length of 10 characters, this creates a possibility of 62<sup>10</sup> unique filenames. 
 
-
-<br>
-
-## Tests
-```shell
-mocha
-```
-
 <br>
 
 ## Changelog

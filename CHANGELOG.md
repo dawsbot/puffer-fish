@@ -1,6 +1,22 @@
 ## Change Log
 
-### upcoming (2016/02/05 00:56 +00:00)
+### upcoming (2016/05/30 06:42 +00:00)
+- [#10](https://github.com/dawsonbotsford/puffer-fish/pull/10) Merge pull request #10 from dawsonbotsford/greenkeeper-mocha-2.5.0 (@dawsonbotsford)
+- [e0eafa7](https://github.com/dawsonbotsford/puffer-fish/commit/e0eafa7988ca8d081c0c97eb7ed26276baa81a38) chore(package): update mocha to version 2.5.0 (@greenkeeperio-bot)
+- [#11](https://github.com/dawsonbotsford/puffer-fish/pull/11) Merge pull request #11 from dawsonbotsford/greenkeeper-inquirer-1.0.3 (@dawsonbotsford)
+- [0a75cf5](https://github.com/dawsonbotsford/puffer-fish/commit/0a75cf5d95e55806482e33d987692d754d6953b7) chore(package): update inquirer to version 1.0.3 (@greenkeeperio-bot)
+- [103bad2](https://github.com/dawsonbotsford/puffer-fish/commit/103bad2ca560ecb97544b9bc3fa5992d6ba052b6) whitelist files and include new version in tests (@dawsonbotsford)
+- [176446b](https://github.com/dawsonbotsford/puffer-fish/commit/176446b8650ffa00eb8ed9bf3052c3462e593c36) Merge branch 'master' of github.com:dawsonbotsford/puffer-fish (@dawsonbotsford)
+- [ff263a5](https://github.com/dawsonbotsford/puffer-fish/commit/ff263a570dc4ad3e0b39790a2ff860f1c6ecc4d0) lighten size of module (@dawsonbotsford)
+- [#5](https://github.com/dawsonbotsford/puffer-fish/pull/5) Merge pull request #5 from dawsonbotsford/greenkeeper-inquirer-0.12.0 (@dawsonbotsford)
+- [3437bf7](https://github.com/dawsonbotsford/puffer-fish/commit/3437bf77cb61dfdf4d50e32782f8c359174586b1) chore(package): update inquirer to version 0.12.0 (@greenkeeperio-bot)
+- [6fd60ba](https://github.com/dawsonbotsford/puffer-fish/commit/6fd60ba8d9966ee8886334a9b5cc62faafb988ab) fix url and add whitespace for npm markdown (@dawsonbotsford)
+- [0316d01](https://github.com/dawsonbotsford/puffer-fish/commit/0316d015e6e5a0d6ba84e7961740b9a1ab37d0a7) cleanup readme (@dawsonbotsford)
+- [c42d6fe](https://github.com/dawsonbotsford/puffer-fish/commit/c42d6fec8c449e88c19c92d1d5ee0016004b9415) Fix grammar on readme (@dawsonbotsford)
+- [8b35d96](https://github.com/dawsonbotsford/puffer-fish/commit/8b35d96ec64b411bad1d2f3741be0d39c6163567) puff (@dawsonbotsford)
+- [15a6907](https://github.com/dawsonbotsford/puffer-fish/commit/15a69072ee803db6621d549ff3d333a8b3e8f10e) 1.0.0 release (@dawsonbotsford)
+
+### v1.0.0 (2016/02/02 19:18 +00:00)
 - [4171dba](https://github.com/dawsonbotsford/puffer-fish/commit/4171dbad5e94ee9c4a292f5f84fec861fb8983c6) improve faq, etc. (@dawsonbotsford)
 - [0b4928e](https://github.com/dawsonbotsford/puffer-fish/commit/0b4928ef22acbbcc9ef1d9d16eec6e88e74aa7aa) Generate random filename. Closes #1 (@dawsonbotsford)
 - [e7a8114](https://github.com/dawsonbotsford/puffer-fish/commit/e7a811469fd72aa8c5fedabe443de887f364918b) fix indentation (@dawsonbotsford)

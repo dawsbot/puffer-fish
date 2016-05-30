@@ -21,6 +21,9 @@
   "globals": {
     "chrome": false
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+  },
   "ecmaFeatures": {
     "jsx": true,
     "es6": true
